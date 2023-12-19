@@ -29,4 +29,7 @@ nawer:
 rostan:
   type: "CNAME"
   data: "nawer.kezal.fr."
+itworks:
+  type: "CNAME"
+  data: "nawer.kezal.fr."
 ...
