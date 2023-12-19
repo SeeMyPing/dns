@@ -1,0 +1,32 @@
+---
+"":
+    type: "A"
+    data: "51.159.166.89"
+"":
+    type: "AAAA"
+    data: "2001:bc8:1204:1241::1"
+www:
+    type: "CNAME"
+    data: "kezal.fr"
+
+"":
+    type: "MX"
+    data: "kezal-fr.mail.protection.outlook.com."
+    priority: 0
+"":
+    type: "TXT"
+    data: "v=spf1 include:spf.protection.outlook.com include:_spf.tem.scw.cloud -all"
+autodiscover:
+    type: "CNAME"
+    data: "autodiscover.outlook.com."
+d1e697ec-855b-4232-ab5e-981bc39abd2e._domainkey:
+    type: "TXT"
+    data: "v=DKIM1; h=sha256; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy2bemRQNLkpvYSmLEhVCgAbjJlOAEjliYBJsFFEHTvwQWeSy7lUGOA5IFowM1GEOWPR7uBrtTquFD2RN8keWJPYX2fL5e4VaVEBuKp642ri496/D9u96X6mw/t4gk1afTDhF7cLOuzYV5DpwUHMMKLp7dKcma5h6nmSbs9T7Fpcu1x4is5NKSYAFxYz3D0EHULi7ZD8jMgS5LNh0qLM7GfVURsF0lr8qRTXpJxkLmF49Kjvc5nO9wusU7IajqVAz4eWDh47pskf9Ws1v1/ZymOuca59GkiAciB7A5NoGbvPxQHl1zX9cLF4PdklyvH9TS8HH3MVO+WmLbh4nMVsLGQIDAQAB"
+
+nawer:
+  type: "A"
+  data: "82.66.223.32"
+rostan:
+  type: "CNAME"
+  data: "nawer.kezal.fr."
+...

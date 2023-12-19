@@ -1,0 +1,17 @@
+---
+"":
+    type: "A"
+    data: "164.90.220.226"
+www:
+    type: "CNAME"
+    data: "seemyping.xyz"
+_atproto:
+    type: "TXT"
+    data: "did=did:plc:fgheiogtu6hrzuh3rcq3tc4h"
+_discord:
+    type: "TXT"
+    data: "dh=8b4326f661b6bd2a325fffe5004d8e38eaa488cf"
+_scaleway-challenge:
+    type: "TXT"
+    data: "6fe04cae-4a32-4833-8d02-5fcef244864f"
+...
