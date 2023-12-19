@@ -5,6 +5,6 @@ resource "scaleway_domain_record" "kezal-fr" {
   type     = each.value["type"]
   data     = each.value["data"]
   ttl      = try(each.value["ttl"], 3600)
-  priority  = try(each.value["priority"], null)
+  priority = try(each.value["priority"], null)
 
 }
