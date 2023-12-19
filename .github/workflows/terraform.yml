@@ -28,6 +28,7 @@ jobs:
 
     - name: Terraform Init
       run: terraform init
+      working-directory: terraform/
       env:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
@@ -36,9 +37,12 @@ jobs:
           AWS_DEFAULT_REGION: "fr-par-1"
 
     - name: Terraform Format
+      working-directory: terraform/
       run: terraform fmt -check
 
+
     - name: Terraform Plan
+      working-directory: terraform/
       run: terraform plan -input=false
       env:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
@@ -48,6 +52,7 @@ jobs:
           AWS_DEFAULT_REGION: "fr-par-1"
 
     - name: Terraform Apply
+      working-directory: terraform/
       if: github.ref == 'refs/heads/"main"' && github.event_name == 'push'
       run: terraform apply -auto-approve -input=false
       env:
